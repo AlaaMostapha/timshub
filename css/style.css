@@ -14,13 +14,43 @@
     top: 0;
     left: 0;
 }
-.modal-header{
+
+.modal-header {
     background: #a11d25;
     color: white;
 }
-.close{
+
+.close {
     color: white;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #80808094;
+    opacity: 0;
+}
+
+.overlay p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: gray;
+    padding: 0.5em;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+#more {display: none;}
 /* Reset Code */
 body {
     padding: 0;
@@ -78,7 +108,7 @@ p {
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 1.9;
-    color: #999;
+    color: #616161;
     font-family: 'Sarabun', sans-serif;
 }
 
@@ -291,7 +321,7 @@ p.movetxt {
 .services-w3ls-grid h4 {
     font-weight: 600;
     color: #1d1d1d;
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .serv-icon {
@@ -410,10 +440,11 @@ a.blog-btn:hover {
 }
 
 
-.partners img{
+.partners img {
     filter: grayscale(1);
 }
-.partners img:hover{
+
+.partners img:hover {
     filter: grayscale(0);
 }
 
@@ -887,9 +918,10 @@ h2.footer-title {
     -o-transition: all 0.7s ease-in-out;
     -ms-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
- }
- .view-tenth .mask {
-    background-color:#90b555;
+}
+
+.view-tenth .mask {
+    background-color: #90b555;
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
@@ -898,8 +930,9 @@ h2.footer-title {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
- }
- /*.view-tenth h2{
+}
+
+/*.view-tenth h2{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background: transparent;
     margin: 20px 40px 0px 40px;
@@ -918,7 +951,7 @@ h2.footer-title {
     filter: alpha(opacity=0);
     opacity: 0;
  }*/
- .view-tenth p {
+.view-tenth p {
     color: #333;
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -933,8 +966,9 @@ h2.footer-title {
     -o-transition: all 0.5s linear;
     -ms-transition: all 0.5s linear;
     transition: all 0.5s linear;
- }
- .view-tenth a.info {
+}
+
+.view-tenth a.info {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
@@ -948,8 +982,9 @@ h2.footer-title {
     -o-transition: all 0.5s linear;
     -ms-transition: all 0.5s linear;
     transition: all 0.5s linear;
- }
- .view-tenth:hover img {
+}
+
+.view-tenth:hover img {
     -webkit-transform: scale(10);
     -moz-transform: scale(10);
     -o-transform: scale(10);
@@ -958,13 +993,18 @@ h2.footer-title {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
- }
- .view-tenth:hover .mask {
+
+}
+
+.view-tenth:hover .mask {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
- }
- .view-tenth:hover h2,.view-tenth:hover p,.view-tenth:hover a.info {
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -973,9 +1013,9 @@ h2.footer-title {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
- }
-                 
- 
+}
+
+
 /* copyright */
 .cpy-right {
     background: #1c1d21;
@@ -1016,7 +1056,7 @@ h2.footer-title {
     }
 
     .nav_links>li>a>span {
-        font-size: 28px;
+        font-size: 23px;
     }
 
     .nav_links>li>a>p {
@@ -1823,10 +1863,10 @@ h2.footer-title {
 
 /* //responsive */
 
-@media (min-width: 576px){
-.modal-dialog {
-    max-width:650px!important;
-    margin: 8.75rem auto;
-   
-}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 650px !important;
+        margin: 8.75rem auto;
+
+    }
 }
